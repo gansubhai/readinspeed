@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Readinspeed</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
+        <!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/util_1.js"></script>
+		<script src="assets/js/timerUtil.js"></script>
+		
+	</head>
+	<body>
+
+
+    
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#one">Start Reading</a></li>
+							<li><a href="#two">Video Guide</a></li>
+							<li><a href="#about">About Us</a></li>
+                            <li><a href="#three">Get in touch</a></li>
+							<li><a href="http://readinspeed.com/blog/" target="_blank">Blog</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<img style="width:260px; height:60px;" src="images/logo.png" /><!-- <h1>Read IN Speed</h1> -->
+							<p>A website/app to read your favourite articles at your desired speed<br />
+							and released for free to keep your reading speed up to the mark.</p>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">Start here</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper styleCust spotlights">
+						<div class="inner">
+                        	
+
+
+		<!-- <marquee><b>You will need to install plugin listed on right side to enjoy reading from different online sources</b></marquee>-->
+			<h4 style="color:#fff;">Upload Your Own File(.txt) :</h4>
+			<input type="file" class="btn btn-info" id="fileinput" />
+			<!--<h4>Or Select text from our list </h4>-->
+          
+			<label>No of words/Minute : </label>
+			<select style="width:40%;" class="half" id="dropDownNoOfWordsPerMinute">
+			<option value="">Please select no of WPM</option>
+			<option value="140">140 Wpm / Basic speed</option>
+			<option value="200">200 Wpm / Basic speed</option>
+			<option value="300">300 Wpm / Basic speed</option>
+			<option value="500">400 Wpm / Basic speed</option>
+			<option value="600">500 Wpm / Basic speed</option>
+			</select>
+			<input style="width:50%;" class="half" type="text" id="noOfWordsPerMinute" placeholder="Or type your Speed here .. ">
+			
+			<br><br>
+			<font color="white"><p id="timerWatch"></p></font>
+			<br>	
+			<div id="upWindow" class="window">
+			<p id="demo" style="font-family:Sans-serif;font-size:20px;"></p>
+			</div>
+			<button class="btn btn-info" onclick="refresh()"><b>Refresh</b></button>
+			<button class="btn btn-info" onclick="Start()"><b>Start</b></button>
+			
+
+
+                        </div>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>User Video Guide & How to !</h2>
+							<iframe width="auto" height="100%"
+src="http://www.youtube.com/embed/CBwlimladUg">
+</iframe>
+							
+								
+							
+							<ul class="actions">
+								<li><a href="#" class="button">Learn more</a></li>
+							</ul>
+						</div>
+					</section>
+                    <!-- about -->
+					<section id="about" class="wrapper style2 fade-up">
+						<div class="inner">
+                         	<h2>About Us</h2>
+                            <p>We are passionate team about technology and solving real world problems we face. This project is also our contribution to society to improve the quality of reading of a person to achieve more.</p>
+							<p><b>Overview : </b>Currently on an average reader have a habit of reading at a speed at 70 words per minute and guiness book hold the record of 4000 words per minute, so where we stand and whats the wrong in our approach. After analysis over 5 years by conducting survey with various group of readers we analyzed that to increase speed of reader we need to increase the width of there visibilty per instance.
+ So how we gone help you select any article or get your own text file we help you to read it at your own speed.
+ We are into social entrepreneurship a platform where a individual would be able to read his material at his own speed. To contribute to all readers society 
+                            </p>
+							<ul class="actions">
+								<li><a href="#" class="button">Top</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>Please contact us for all your queries and support</p>
+							<div class="split style1">
+								<section>
+									<form method="post" action="EmailUsForm.php" >
+										<div class="field half first">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="5"></textarea>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>Vashi<br />
+											Navi Mumbai-400703.<br />
+											India.</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">info@readinspeed.com</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>9773115384</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="https://www.facebook.com/ReadinSpeed-1510358115941451/" class="fa-facebook"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="fa-github"><span class="label">GitHub</span></a></li>
+												
+												</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>Readinspeed &copy; 2016. All rights reserved.</li><li>Designed By : <a href="http://www.globev.com">Globev</a></li><li>Powered By : <a href="http://www.developos.org">DevelopOS HOST</a>
+					</ul>
+				</div>
+			</footer>
+<script type="text/javascript">
+
+//
+  document.getElementById('fileinput').onchange = function(){
+	fileChossen="Y";
+	var file = this.files[0];
+	//alert(this.value);
+	var testFormatOfFile = this.value.split(".");
+	console.log(testFormatOfFile[testFormatOfFile.length-1]);
+	formatOfSelectedFile=testFormatOfFile[testFormatOfFile.length-1];	
+
+  var reader = new FileReader();
+  reader.onload = function(progressEvent){
+    // Entire file
+    console.log(this.result);
+	filedata=this.result;
+    // By lines
+    var lines = this.result.split('\n');
+    for(var line = 0; line < lines.length; line++){
+      console.log(lines[line]);
+    }
+  };
+  reader.readAsText(file);
+};
+
+</script>
+		
+
+	</body>
+</html>
